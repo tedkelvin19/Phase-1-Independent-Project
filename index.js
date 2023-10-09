@@ -1,3 +1,10 @@
+// fetch elements from the server
+function getAllCars(){
+    fetch('http://localhost:3000/cars')
+    .then(response => response.json())
+    .then(cars => cars.forEach(car =>  renderCar(car)))
+}
+getAllCars()
 // DOM Render function
 function renderCar(car){
     // build car container

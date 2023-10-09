@@ -10,7 +10,7 @@ body{
 	color: #555;
 }
 
-h1{
+h1,h2{
 	text-align: center;
 	margin-top: 50px;
 	font-size: 30px;
@@ -23,12 +23,6 @@ h1{
 	max-width: 1240px;
 	padding: 20px;
 }
-
-.car{
-	padding: 10px;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
-
 .car img{
 	width: 100%;
 	display: block;
@@ -39,20 +33,17 @@ h1{
 	padding-top: 30px;
 	padding-bottom: 20px;
 	font-weight: 600;
-	text-transform: uppercase;
 }
-.car .year{
-	padding: 0 20px 20px 20px;	
+.car .year{	
 	line-height: 22px;
+	text-align: center;
 }
 
 .car .class{
 	text-align: center;
-	font-weight: 600;
-	font-size: 28px;
-	color: #9b0b03;
-	padding-top: 30px;
+	font-size: 20px;
+	color: #5ae01c;
+	padding-top: 10px;
 	font-family: sans-serif;
 	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-	transform: rotate(-45deg);
 }

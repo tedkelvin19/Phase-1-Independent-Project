@@ -15,7 +15,31 @@
 
 </head>
 <body>
-    <h1>Auto Car Dealer</h1>
+    <nav>
+        <a href="index.html"><img src="logo.jpeg"></a>
+        <h1>Auto Car Dealer</h1>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+        <form class="request-car">
+          <h3>Request Car!</h3>
+          <input type="text" name="image" value="" placeholder="Enter car image URL..." class="input-text">
+          <br>
+          <input type="text" name="name" value="" placeholder="Enter car name..." class="input-text">
+          <br>
+          <input type="number" name="year" value="" placeholder="Enter car year..." class="input-text">
+          <br>
+          <input type="text" name="class" value="" placeholder="Enter car class..." class="input-text">
+          <br>
+          <input type="number" name="price" value="" placeholder="Enter car price..." class="input-text">
+          <br>
+          <input type="submit" name="submit" value="Request Car" class="submit">
+        </form>
+      </div>
+      <p style="text-align:center; margin-top: 20px; color: black;">
+        A car you want is not Available? <button id="new-car-btn">Request Car</button>
+      </p>
     <h2>Available cars</h2>
     <div class="cars">
     </div>

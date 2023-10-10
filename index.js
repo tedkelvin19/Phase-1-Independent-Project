@@ -2,7 +2,9 @@
 function getAllCars(){
     fetch('http://localhost:3000/cars')
     .then(response => response.json())
-    .then(cars => cars.forEach(car =>  renderCar(car)))
+    .then(cars => cars.forEach(car => {
+        renderCar(car)
+    }))
 }
 getAllCars()
 // DOM Render function
@@ -12,7 +14,7 @@ function renderCar(car){
     card.className = "car"
     card.innerHTML = `
     <img src="${car.image}">
-	<p class="title">${car.title}</p>
+	<h1 class="title">${car.title}</h1>
 	<p><span class="class">Year:</span> ${car.start_production}</p>
 	<p>
 	    <span class="class">Class:</span>
@@ -42,3 +44,25 @@ document.addEventListener('DOMContentLoaded',()=> {
         }
     })
 })
+
+// function to filter cars on keyup
+function search (){
+    const searchBox = document.getElementById('search-car').value.toUpperCase()
+    const storeCar = document.getElementById('cars-list')
+    const car = document.querySelectorAll('.car')
+    const carName = storeCar.getElementsByTagName('h1')
+
+    for(var i=0; i<carName.length; i++){
+        let match = car[i].getElementsByTagName('h1')[0]
+
+        if(match){
+            let textValue = match.textContent || match.innerHTML
+
+            if(textValue.toUpperCase().indexOf(searchBox)> -1){
+                car[i].style.display = ""
+            } else {
+                car[i].style.display = "none"
+            }
+        }
+    }
+}

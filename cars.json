@@ -4,104 +4,114 @@
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2016_Volvo_S90_Inscription_fr.jpg/400px-2016_Volvo_S90_Inscription_fr.jpg",
             "title": "Volvo S90",
             "start_production": 2016,
-            "class": "Executive car /"
+            "class": "Executive car",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pontiac_Torrent_--_08-28-2009.jpg/400px-Pontiac_Torrent_--_08-28-2009.jpg",
             "title": "Pontiac Torrent",
             "start_production": 2005,
-            "class": "Mid-size crossover SUV"
+            "class": "Mid-size crossover SUV",
+            "price": 0.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Isuzu-Ascender-7Pass.jpg/400px-Isuzu-Ascender-7Pass.jpg",
             "title": "Isuzu Ascender",
             "start_production": 2003,
-            "class": "mid-size SUV"
+            "class": "mid-size SUV",
+            "price": 0.6
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/2009_Saturn_Sky_Redline_Ruby_Red_Limited_Edition.jpg/400px-2009_Saturn_Sky_Redline_Ruby_Red_Limited_Edition.jpg",
             "title": "Saturn Sky",
             "start_production": 2006,
-            "class": "Sports car"
+            "class": "Sports car",
+            "price": 2
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Chevrolet_SSR.jpg/400px-Chevrolet_SSR.jpg",
             "title": "Chevrolet SSR",
             "start_production": 2003,
-            "class": "pickup"
+            "class": "pickup",
+            "price": 2.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Samand_LX_31.jpg/400px-Samand_LX_31.jpg",
             "title": "IKCO Samand",
             "start_production": 2003,
-            "class": "Small family carsedan"
+            "class": "Small family carsedan",
+            "price": 0.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Renault_Modus_front_20080530.jpg/400px-Renault_Modus_front_20080530.jpg",
             "title": "Renault Modus",
             "start_production": 2004,
-            "class": "Mini MPV"
+            "class": "Mini MPV",
+            "price": 1.2
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Chevrolet_Cobalt_Coupe.jpg/400px-Chevrolet_Cobalt_Coupe.jpg",
             "title": "Chevrolet Cobalt",
             "start_production": 2004,
-            "class": "Compact car"
+            "class": "Compact car",
+            "price": 0.9
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/2007ChevroletHHR-001.jpg/400px-2007ChevroletHHR-001.jpg",
             "title": "Chevrolet HHR",
             "start_production": 2005,
-            "class": "Compact Car"
+            "class": "Compact Car",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2007-Saturn-Aura-XE.JPG/400px-2007-Saturn-Aura-XE.JPG",
             "title": "Saturn Aura",
             "start_production": 2006,
-            "class": "Mid-size"
+            "class": "Mid-size",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Saab_9-7X_--_03-19-2012.JPG/400px-Saab_9-7X_--_03-19-2012.JPG",
             "title": "Saab 9-7X",
             "start_production": 2005,
-            "class": "Mid-size luxury SUV"
+            "class": "Mid-size luxury SUV",
+            "price": 2.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Bentley_Continental_Flying_Spur_-_Flickr_-_Alexandre_Pr%C3%A9vot_%28cropped%29.jpg/400px-Bentley_Continental_Flying_Spur_-_Flickr_-_Alexandre_Pr%C3%A9vot_%28cropped%29.jpg",
             "title": "Bentley Continental Flying Spur (2005)",
             "start_production": 2005,
-            "class": "Full-size luxury car"
+            "class": "Full-size luxury car",
+            "price": 3.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Fiat_Idea_front_20071102.jpg/400px-Fiat_Idea_front_20071102.jpg",
             "title": "Fiat Idea",
             "start_production": 2003,
-            "class": "Mini MPV"
+            "class": "Mini MPV",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/06-07_Cadillac_DTS.jpg/400px-06-07_Cadillac_DTS.jpg",
             "title": "Cadillac DTS",
             "start_production": 2005,
-            "class": "Full-size luxury car"
+            "class": "Full-size luxury car",
+            "price": 1.9
         },
 
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Cadillac_BLS_front.JPG/400px-Cadillac_BLS_front.JPG",
             "title": "Cadillac BLS",
             "start_production": 2005,
-            "class": "Compact executive car"
+            "class": "Compact executive car",
+            "price": 1.6
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/%22_12_-_ITALY_-_Alfa_Romeo_Brera_Milan_Design_Week_Superstudio.JPG/400px-%22_12_-_ITALY_-_Alfa_Romeo_Brera_Milan_Design_Week_Superstudio.JPG",
             "title": "Alfa Romeo Brera and Spider",
             "start_production": 2005,
-            "class": "Sports car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Alfa_159_grey.jpg/400px-Alfa_159_grey.jpg",
-            "title": "Alfa Romeo 159",
-            "start_production": 2004,
-            "class": "Compact executive car"
+            "class": "Sports car",
+            "price": 2.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2014_Audi_Q5_%288R_MY14%29_2.0_TDI_quattro_wagon_%282015-07-24%29_01.jpg/400px-2014_Audi_Q5_%288R_MY14%29_2.0_TDI_quattro_wagon_%282015-07-24%29_01.jpg",
@@ -119,497 +129,421 @@
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2008_Jeep_Compass_%28MK_MY08%29_Limited_2.4_wagon_%282015-11-11%29_01.jpg/400px-2008_Jeep_Compass_%28MK_MY08%29_Limited_2.4_wagon_%282015-11-11%29_01.jpg",
             "title": "Jeep Compass",
             "start_production": 2006,
-            "class": "Compact crossover SUV"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/07-08_Chrysler_Pacifica.jpg/400px-07-08_Chrysler_Pacifica.jpg",
-            "title": "Chrysler Pacifica (CS)",
-            "start_production": 2003,
-            "class": "Mid-size crossover"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/2003-2005_Infiniti_FX35.jpg/400px-2003-2005_Infiniti_FX35.jpg",
-            "title": "Infiniti QX70",
-            "start_production": 2002,
-            "class": "Mid-size luxury crossover SUV"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/2006-2011_Chevrolet_Captiva_LS_wagon_%282015-12-28%29_01.jpg/400px-2006-2011_Chevrolet_Captiva_LS_wagon_%282015-12-28%29_01.jpg",
-            "title": "Chevrolet Captiva",
-            "start_production": 2006,
-            "class": "Compact/mid-size SUV"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Chevrolet_Celta_3dr_post-2006_-_Front.jpg/400px-Chevrolet_Celta_3dr_post-2006_-_Front.jpg",
-            "title": "Chevrolet Celta",
-            "start_production": 2000
+            "class": "Compact crossover SUV",
+            "price": 3.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Mercedes-Benz_S_320_CDI_4MATIC_L_%28V_221%29_%E2%80%93_Frontansicht_%281%29%2C_30._August_2011%2C_D%C3%BCsseldorf.jpg/400px-Mercedes-Benz_S_320_CDI_4MATIC_L_%28V_221%29_%E2%80%93_Frontansicht_%281%29%2C_30._August_2011%2C_D%C3%BCsseldorf.jpg",
             "title": "Mercedes-Benz S-Class (W221)",
             "start_production": 2005,
-            "class": "Full-size luxury car"
+            "class": "Full-size luxury car",
+            "price": 5.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/2008_Aston_Martin_V8_Vantage_Coupe_%282014-12-28%29.JPG/400px-2008_Aston_Martin_V8_Vantage_Coupe_%282014-12-28%29.JPG",
             "title": "Aston Martin Vantage (2005)",
             "start_production": 2005,
-            "class": "Grand tourer"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Dodge_Caliber_--_09-07-2009.jpg/400px-Dodge_Caliber_--_09-07-2009.jpg",
-            "title": "Dodge Caliber",
-            "start_production": 2006,
-            "class": "Compact car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Peugeot_4007_HDi_FAP_155_Platinum_%E2%80%93_Frontansicht%2C_15._Juni_2011%2C_W%C3%BClfrath.jpg/400px-Peugeot_4007_HDi_FAP_155_Platinum_%E2%80%93_Frontansicht%2C_15._Juni_2011%2C_W%C3%BClfrath.jpg",
-            "title": "Peugeot 4007",
-            "start_production": 2007,
-            "class": "Compact SUV"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/2005-2006_Mitsubishi_380_%28DB%29_sedan_01.jpg/400px-2005-2006_Mitsubishi_380_%28DB%29_sedan_01.jpg",
-            "title": "Mitsubishi 380",
-            "start_production": 2005,
-            "class": "Mid-size car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Saturn_Outlook_--_03-24-2012.JPG/400px-Saturn_Outlook_--_03-24-2012.JPG",
-            "title": "Saturn Outlook",
-            "start_production": 2006,
-            "class": "Full-size crossover SUV"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/2007-2011_Volkswagen_Eos_--_03-30-2011_2.jpg/400px-2007-2011_Volkswagen_Eos_--_03-30-2011_2.jpg",
-            "title": "Volkswagen Eos",
-            "start_production": 2006,
-            "class": "Sport compact"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Opel_Antara_2.0_CDTI_front_20100516.jpg/400px-Opel_Antara_2.0_CDTI_front_20100516.jpg",
-            "title": "Opel Antara",
-            "start_production": 2006,
-            "class": "Compact crossover SUV"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Peugeot_207_RC_Facelift_front_20100416.jpg/400px-Peugeot_207_RC_Facelift_front_20100416.jpg",
-            "title": "Peugeot 207",
-            "start_production": 2006,
-            "class": "Supermini"
+            "class": "Grand tourer",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mitsubishi_i.jpg/400px-Mitsubishi_i.jpg",
             "title": "Mitsubishi i",
             "start_production": 2006,
-            "class": "Kei car"
+            "class": "Kei car",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Citro%C3%ABn_C-Crosser_front_20100329.jpg/400px-Citro%C3%ABn_C-Crosser_front_20100329.jpg",
             "title": "Citroën C-Crosser",
             "start_production": 2007,
-            "class": "Compact SUV"
+            "class": "Compact SUV",
+            "price": 2.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Dodge_Nitro_.jpg/400px-Dodge_Nitro_.jpg",
             "title": "Dodge Nitro",
             "start_production": 2006,
-            "class": "Compact SUV"
+            "class": "Compact SUV",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/2004-2005_Mitsubishi_Endeavor_--_03-11-2011.jpg/400px-2004-2005_Mitsubishi_Endeavor_--_03-11-2011.jpg",
             "title": "Mitsubishi Endeavor",
             "start_production": 2002,
-            "class": "Mid-size crossover SUV"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Dacia_Solenza_1.4_MPI_Confort.jpg/400px-Dacia_Solenza_1.4_MPI_Confort.jpg",
-            "title": "Dacia Solenza",
-            "start_production": 2003,
-            "class": "Subcompact"
+            "class": "Mid-size crossover SUV",
+            "price": 3.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Saab_9-4X_--_04-08-2011.jpg/400px-Saab_9-4X_--_04-08-2011.jpg",
             "title": "Saab 9-4X",
             "start_production": 2011,
-            "class": "Compact luxury crossover SUV"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Toyota_Innova_%28first_generation%29_%28front%29%2C_Kajang.jpg/400px-Toyota_Innova_%28first_generation%29_%28front%29%2C_Kajang.jpg",
-            "title": "Toyota Innova",
-            "start_production": 2004,
-            "class": "Compact MPV"
+            "class": "Compact luxury crossover SUV",
+            "price": 10
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/06-08_Toyota_Yaris.jpg/400px-06-08_Toyota_Yaris.jpg",
             "title": "Toyota Belta",
             "start_production": 2005,
-            "class": "Subcompact"
+            "class": "Subcompact",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Jeep_Patriot.jpg/400px-Jeep_Patriot.jpg",
             "title": "Jeep Patriot",
             "start_production": 2006,
-            "class": "Compact Crossover SUV"
+            "class": "Compact Crossover SUV",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Renault_Wind_Dynamique_TCe_100_front_20100904.jpg/400px-Renault_Wind_Dynamique_TCe_100_front_20100904.jpg",
             "title": "Renault Wind",
             "start_production": 2010,
-            "class": "Roadster"
+            "class": "Roadster",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/ChevroletCorvette_3.JPG/400px-ChevroletCorvette_3.JPG",
             "title": "Chevrolet Corvette (C6)",
             "start_production": 2004,
-            "class": "Sports car"
+            "class": "Sports car",
+            "price": 3.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/2013_Lincoln_MKS_AWD_facelift%2C_front_view.jpg/400px-2013_Lincoln_MKS_AWD_facelift%2C_front_view.jpg",
             "title": "Lincoln MKS",
             "start_production": 2008,
-            "class": "Full-size luxury car"
+            "class": "Full-size luxury car",
+            "price": 5.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Vento_TL.jpg/400px-Vento_TL.jpg",
             "title": "Volkswagen Vento",
             "start_production": 2010,
-            "class": "Subcompact car"
+            "class": "Subcompact car",
+            "price": 3.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2014_AM_Rapide_S_front.jpg/400px-2014_AM_Rapide_S_front.jpg",
             "title": "Aston Martin Rapide",
             "start_production": 2010,
-            "class": "Full-size luxury car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Fiat_Grande_Punto_20090906_front.JPG/400px-Fiat_Grande_Punto_20090906_front.JPG",
-            "title": "Fiat Grande Punto",
-            "start_production": 2005,
-            "class": "Supermini"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/2015_Dodge_Charger_SRT_392_with_Scat_Pack.JPG/400px-2015_Dodge_Charger_SRT_392_with_Scat_Pack.JPG",
-            "title": "Dodge Charger (LX)",
-            "start_production": 2005,
-            "class": "Full-size"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Honda_Airwave.jpg/400px-Honda_Airwave.jpg",
-            "title": "Honda Airwave",
-            "start_production": 2005,
-            "class": "Subcompact car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Saturn_Relay.jpg/400px-Saturn_Relay.jpg",
-            "title": "Saturn Relay",
-            "start_production": 2005,
-            "class": "Minivan"
+            "class": "Full-size luxury car",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Mazda_CX-9.JPG/400px-Mazda_CX-9.JPG",
             "title": "Mazda CX-9",
             "start_production": 2006,
-            "class": "Full-size (sometimes considered mid-size) crossover SUV"
+            "class": "Full-size (sometimes considered mid-size) crossover SUV",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/2007_Toyota_Aurion_Prodigy_06_%28edit_5%29.jpg/400px-2007_Toyota_Aurion_Prodigy_06_%28edit_5%29.jpg",
             "title": "Toyota Aurion (XV40)",
             "start_production": 2006,
-            "class": "Mid-size car"
+            "class": "Mid-size car",
+            "price": 2.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/GKDEvolution.jpg/400px-GKDEvolution.jpg",
             "title": "GKD Evolution",
             "start_production": 2006,
-            "class": "Roadster coupe"
+            "class": "Roadster coupe",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Ford_S-Max_-_Mondial_de_l%27Automobile_de_Paris_2014_-_013.jpg/400px-Ford_S-Max_-_Mondial_de_l%27Automobile_de_Paris_2014_-_013.jpg",
             "title": "Ford S-Max",
             "start_production": 2006,
-            "class": "Large MPV"
+            "class": "Large MPV",
+            "price": 3.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Dodge_Ram_SRT-10.jpg/400px-Dodge_Ram_SRT-10.jpg",
             "title": "Dodge Ram SRT-10",
             "start_production": 2004,
-            "class": "Sport pickup truck"
+            "class": "Sport pickup truck",
+            "price": 5.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/07_STS_V.jpg/400px-07_STS_V.jpg",
             "title": "Cadillac STS-V",
             "start_production": 2006,
-            "class": "Mid-size luxury car"
+            "class": "Mid-size luxury car",
+            "price": 4.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/2013_Alfa_Romeo_Giulietta_%28940_MY13%29_Distinctive_hatchback_%282015-07-09%29.jpg/400px-2013_Alfa_Romeo_Giulietta_%28940_MY13%29_Distinctive_hatchback_%282015-07-09%29.jpg",
             "title": "Alfa Romeo Giulietta (940)",
             "start_production": 2010,
-            "class": "Compact car / Small family car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Opel_Signum_Facelift_20090717_front.JPG/400px-Opel_Signum_Facelift_20090717_front.JPG",
-            "title": "Opel Signum",
-            "start_production": 2003,
-            "class": "Large family car"
+            "class": "Compact car / Small family car",
+            "price": 4.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Aston_Martin_DBS_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2811%29_%28cropped%29.jpg/400px-Aston_Martin_DBS_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2811%29_%28cropped%29.jpg",
             "title": "Aston Martin DBS V12",
             "start_production": 2007,
-            "class": "Grand tourer"
+            "class": "Grand tourer",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Renault_Fluence_2.0_Authentique_2013_%2814634156231%29.jpg/400px-Renault_Fluence_2.0_Authentique_2013_%2814634156231%29.jpg",
             "title": "Renault Fluence",
             "start_production": 2009,
-            "class": "Small family car"
+            "class": "Small family car",
+            "price": 2.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Renault_Talisman.jpg/400px-Renault_Talisman.jpg",
             "title": "Renault Talisman",
             "start_production": 2015,
-            "class": "Large family car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2005_Holden_Commodore_%28VZ%29_SV6_sedan_%282015-08-07%29_01.jpg/400px-2005_Holden_Commodore_%28VZ%29_SV6_sedan_%282015-08-07%29_01.jpg",
-            "title": "Holden Commodore (VZ)",
-            "start_production": 2004,
-            "class": "Full-size"
+            "class": "Large family car",
+            "price": 5.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/%22_15_-_ITALY_-_Fiat_500_restyling_in_Sempione_Park_%28Sforzesco_Castle%29_in_Milan_-_world_premier_2015_Hatchbacks_purple_lounge_and_white_sport_05.jpg/400px-%22_15_-_ITALY_-_Fiat_500_restyling_in_Sempione_Park_%28Sforzesco_Castle%29_in_Milan_-_world_premier_2015_Hatchbacks_purple_lounge_and_white_sport_05.jpg",
             "title": "Fiat 500 (2007)",
             "start_production": 2007,
-            "class": "City car"
+            "class": "City car",
+            "price": 3.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/2009_Volkswagen_Tiguan_%285N_MY10%29_125TSI_4MOTION_wagon_%282015-07-24%29_01.jpg/400px-2009_Volkswagen_Tiguan_%285N_MY10%29_125TSI_4MOTION_wagon_%282015-07-24%29_01.jpg",
             "title": "Volkswagen Tiguan",
             "start_production": 2007,
-            "class": "Compact crossover SUV"
+            "class": "Compact crossover SUV",
+            "price": 2.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/2009_Holden_Calais_%28VE_MY09.5%29_V_sedan_%282015-07-03%29_01.jpg/400px-2009_Holden_Calais_%28VE_MY09.5%29_V_sedan_%282015-07-03%29_01.jpg",
             "title": "Holden Commodore (VE)",
             "start_production": 2006,
-            "class": "Full-size car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/2003_Holden_Commodore_%28VY_II%29_25th_Anniversary_sedan_%282016-01-04%29_01.jpg/400px-2003_Holden_Commodore_%28VY_II%29_25th_Anniversary_sedan_%282016-01-04%29_01.jpg",
-            "title": "Holden Commodore (VY)",
-            "start_production": 2002
+            "class": "Full-size car",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Suzuki_APV_%28first_generation%29_%28front%29%2C_Serdang.jpg/400px-Suzuki_APV_%28first_generation%29_%28front%29%2C_Serdang.jpg",
             "title": "Suzuki APV",
             "start_production": 2004,
-            "class": "Mini MPV"
+            "class": "Mini MPV",
+            "price": 0.95
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/2006-2008_Holden_WM_Caprice_sedan_02.jpg/400px-2006-2008_Holden_WM_Caprice_sedan_02.jpg",
             "title": "Holden Caprice (WM)",
             "start_production": 2006,
-            "class": "Full-size car"
+            "class": "Full-size car",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Audi_Q3_2.0_TFSI_quattro_S_tronic_Amalfiwei%C3%9F.JPG/400px-Audi_Q3_2.0_TFSI_quattro_S_tronic_Amalfiwei%C3%9F.JPG",
             "title": "Audi Q3",
             "start_production": 2011,
-            "class": "Compact crossover SUV"
+            "class": "Compact crossover SUV",
+            "price": 7.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/VW_Polo_IV_front_20080215.jpg/400px-VW_Polo_IV_front_20080215.jpg",
             "title": "Volkswagen Polo Mk4",
             "start_production": 2001,
-            "class": "Supermini"
+            "class": "Supermini",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/VW_Crafter_2.0_TDI_Facelift.JPG/400px-VW_Crafter_2.0_TDI_Facelift.JPG",
             "title": "Volkswagen Crafter",
             "start_production": 2006,
-            "class": "Light commercial vehicle - van"
+            "class": "Light commercial vehicle - van",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Nissan_Lafesta_003.JPG/400px-Nissan_Lafesta_003.JPG",
             "title": "Nissan Lafesta",
             "start_production": 2004,
-            "class": "Compact MPV"
+            "class": "Compact MPV",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/2014_Audi_A1_%288X_MY14%29_1.4_TFSI_Attraction_Sportback_5-door_hatchback_%282015-07-09%29_01.jpg/400px-2014_Audi_A1_%288X_MY14%29_1.4_TFSI_Attraction_Sportback_5-door_hatchback_%282015-07-09%29_01.jpg",
             "title": "Audi A1",
             "start_production": 2010,
-            "class": "Supermini"
+            "class": "Supermini",
+            "price": 2.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/2010ChevroletCamaro-05-1.jpg/400px-2010ChevroletCamaro-05-1.jpg",
             "title": "Chevrolet Camaro (fifth generation)",
             "start_production": 2009,
-            "class": "Pony car Muscle car"
+            "class": "Pony car Muscle car",
+            "price": 1.53
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/BMW_218i_Active_Tourer_Advantage_%28F45%29_%E2%80%93_Frontansicht%2C_15._M%C3%A4rz_2015%2C_D%C3%BCsseldorf.jpg/400px-BMW_218i_Active_Tourer_Advantage_%28F45%29_%E2%80%93_Frontansicht%2C_15._M%C3%A4rz_2015%2C_D%C3%BCsseldorf.jpg",
             "title": "BMW 2 Series Active Tourer",
             "start_production": 2014,
-            "class": "Compact MPV"
+            "class": "Compact MPV",
+            "price": 8.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Jeep_Renegade_1.6_MultiJet_2WD_Longitude_%E2%80%93_Frontansicht%2C_9._November_2014%2C_D%C3%BCsseldorf.jpg/400px-Jeep_Renegade_1.6_MultiJet_2WD_Longitude_%E2%80%93_Frontansicht%2C_9._November_2014%2C_D%C3%BCsseldorf.jpg",
             "title": "Jeep Renegade (BU)",
             "start_production": 2014,
-            "class": "Subcompact crossover SUV"
+            "class": "Subcompact crossover SUV",
+            "price": 10.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/2015_Toyota_Corolla_%28ZRE172R%29_Ascent_sedan_%282015-11-11%29_01.jpg/400px-2015_Toyota_Corolla_%28ZRE172R%29_Ascent_sedan_%282015-11-11%29_01.jpg",
             "title": "Toyota Corolla (E170)",
             "start_production": 2013,
-            "class": "Compact"
+            "class": "Compact",
+            "price": 3.76
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/2015_Ford_Mondeo_1.6_Zetec_Econetic_TDCi_Estate_%2816922091829%29.jpg/400px-2015_Ford_Mondeo_1.6_Zetec_Econetic_TDCi_Estate_%2816922091829%29.jpg",
             "title": "Ford Mondeo (fourth generation)",
             "start_production": 2014,
-            "class": "Large family car"
+            "class": "Large family car",
+            "price": 15
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Land_Rover_Discovery_Sport_-_Static_%2815071077156%29.jpg/400px-Land_Rover_Discovery_Sport_-_Static_%2815071077156%29.jpg",
             "title": "Land Rover Discovery Sport",
             "start_production": 2014,
-            "class": "Compact SUV"
+            "class": "Compact SUV",
+            "price": 15.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Vladimir_Putin_driving_Lada_Vesta_04.jpg/400px-Vladimir_Putin_driving_Lada_Vesta_04.jpg",
             "title": "Lada Vesta",
             "start_production": 2015,
-            "class": "Small family car"
+            "class": "Small family car",
+            "price": 1.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/2014_Ford_Tourneo_Courier_%28fl%29.jpg/400px-2014_Ford_Tourneo_Courier_%28fl%29.jpg",
             "title": "Ford Transit Courier",
             "start_production": 2014,
-            "class": "Leisure activity vehicle"
+            "class": "Leisure activity vehicle",
+            "price": 13.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/2014_Rolls-Royce_Wraith_%28MY14%29_coupe_%282015-07-25%29_01.jpg/400px-2014_Rolls-Royce_Wraith_%28MY14%29_coupe_%282015-07-25%29_01.jpg",
             "title": "Rolls-Royce Wraith (2013)",
             "start_production": 2013,
-            "class": "Luxury car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Stagecoach_Midlands_54220_YX63NHG_-_Flickr_-_Alan_Sansbury.jpg/400px-Stagecoach_Midlands_54220_YX63NHG_-_Flickr_-_Alan_Sansbury.jpg",
-            "title": "Volvo B11R",
-            "start_production": 2011,
-            "class": "Coach chassis"
+            "class": "Luxury car",
+            "price": 20.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Aston_Martin_DB10_2015.jpg/400px-Aston_Martin_DB10_2015.jpg",
             "title": "Aston Martin DB10",
             "start_production": 2014,
-            "class": "Grand tourer"
+            "class": "Grand tourer",
+            "price": 18.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cadillac_CT6_04_2015.jpg/400px-Cadillac_CT6_04_2015.jpg",
             "title": "Cadillac CT6",
             "start_production": 2016,
-            "class": "Full-size luxury car"
+            "class": "Full-size luxury car",
+            "price": 10.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Hyundai_ASLAN_Front-Side.png/400px-Hyundai_ASLAN_Front-Side.png",
             "title": "Hyundai Aslan",
             "start_production": 2014,
-            "class": "Executive car"
+            "class": "Executive car",
+            "price": 15.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Renault_Kadjar_front.jpg/400px-Renault_Kadjar_front.jpg",
             "title": "Renault Kadjar",
             "start_production": 2015,
-            "class": "Compact SUV"
+            "class": "Compact SUV",
+            "price": 8.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/VW_Passat_B8_Limousine_2.0_TDI_Highline.JPG/400px-VW_Passat_B8_Limousine_2.0_TDI_Highline.JPG",
             "title": "Volkswagen Passat (B8)",
             "start_production": 2014,
-            "class": "Mid-size car"
+            "class": "Mid-size car",
+            "price": 9.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%2716_Chevrolet_Camaro_Convertible_%28MIAS_%2716%29.jpg/400px-%2716_Chevrolet_Camaro_Convertible_%28MIAS_%2716%29.jpg",
             "title": "Chevrolet Camaro (sixth generation)",
             "start_production": 2015,
-            "class": "Pony car Muscle car"
+            "class": "Pony car Muscle car",
+            "price": 7.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/2016_BMW_7-Series_%28G11%29_sedan%2C_front_view.jpg/400px-2016_BMW_7-Series_%28G11%29_sedan%2C_front_view.jpg",
             "title": "BMW 7 Series (G11)",
             "start_production": 2015,
-            "class": "Full-size luxury car"
+            "class": "Full-size luxury car",
+            "price": 9.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Citro%C3%ABn_C4_Cactus_BlueHDi_100_Shine_Edition_%E2%80%93_Frontansicht_%283%29%2C_2._November_2014%2C_M%C3%BCnster.jpg/400px-Citro%C3%ABn_C4_Cactus_BlueHDi_100_Shine_Edition_%E2%80%93_Frontansicht_%283%29%2C_2._November_2014%2C_M%C3%BCnster.jpg",
             "title": "Citroën C4 Cactus",
             "start_production": 2014,
-            "class": "Mini crossover"
+            "class": "Mini crossover",
+            "price": 14.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ashok_Leyland_STiLE.jpg/400px-Ashok_Leyland_STiLE.jpg",
             "title": "Ashok Leyland STiLE",
             "start_production": 2013,
-            "class": "Minivan"
+            "class": "Minivan",
+            "price": 10.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Tata_Safari_Storme%2C_by_SouLSteer%2C_Maharaj_Bada_from_Gwalior%2C_April_2013.jpg/400px-Tata_Safari_Storme%2C_by_SouLSteer%2C_Maharaj_Bada_from_Gwalior%2C_April_2013.jpg",
             "title": "Tata Safari Storme",
             "start_production": 2012,
-            "class": "SUV"
+            "class": "SUV",
+            "price": 10
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mahindra_TUV_300_Chennai_2016_%282%29.JPG/400px-Mahindra_TUV_300_Chennai_2016_%282%29.JPG",
             "title": "Mahindra TUV300",
             "start_production": 2015,
-            "class": "Mini sport utility vehicle"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Tata_Nano_-_GenX_01.JPG/400px-Tata_Nano_-_GenX_01.JPG",
-            "title": "Tata GenX Nano",
-            "start_production": 2015,
-            "class": "City car"
-        },
-        {
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Jiangling_Yusheng_01_China_2012-06-02.JPG/400px-Jiangling_Yusheng_01_China_2012-06-02.JPG",
-            "title": "JMC Yusheng",
-            "start_production": 2010,
-            "class": "Mid-sized crossover SUV"
+            "class": "Mini sport utility vehicle",
+            "price": 16
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Cadillac_XT5.jpg/400px-Cadillac_XT5.jpg",
             "title": "Cadillac XT5",
             "start_production": 2016,
-            "class": "Mid-size luxury crossover SUV"
+            "class": "Mid-size luxury crossover SUV",
+            "price": 15
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/2017_Pacifica.jpg/400px-2017_Pacifica.jpg",
             "title": "Chrysler Pacifica (RU)",
             "start_production": 2016,
-            "class": "Minivan"
+            "class": "Minivan",
+            "price": 7.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/2016-03-01_Geneva_Motor_Show_G052.JPG/400px-2016-03-01_Geneva_Motor_Show_G052.JPG",
             "title": "SEAT Ateca",
             "start_production": 2016,
-            "class": "Compact crossover SUV"
+            "class": "Compact crossover SUV",
+            "price": 13.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Audi_Q2_Genfer_Automobilsalon_2016.jpg/400px-Audi_Q2_Genfer_Automobilsalon_2016.jpg",
             "title": "Audi Q2",
             "start_production": 2016,
-            "class": "Compact SUV"
+            "class": "Compact SUV",
+            "price": 12.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Fiat_Tipo_-_prz%C3%B3d_%28MSP16%29.jpg/400px-Fiat_Tipo_-_prz%C3%B3d_%28MSP16%29.jpg",
             "title": "Fiat Tipo (2015)",
             "start_production": 2015,
-            "class": "Compact car"
+            "class": "Compact car",
+            "price": 7.5
         }
     ]
 }

@@ -117,13 +117,15 @@
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2014_Audi_Q5_%288R_MY14%29_2.0_TDI_quattro_wagon_%282015-07-24%29_01.jpg/400px-2014_Audi_Q5_%288R_MY14%29_2.0_TDI_quattro_wagon_%282015-07-24%29_01.jpg",
             "title": "Audi Q5",
             "start_production": 2008,
-            "class": "Compact luxury crossover SUV"
+            "class": "Compact luxury crossover SUV",
+            "price": 6.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/2007_Hummer_H3_--_NHTSA.jpg/400px-2007_Hummer_H3_--_NHTSA.jpg",
             "title": "Hummer H3",
             "start_production": 2005,
-            "class": "Mid-size SUV"
+            "class": "Mid-size SUV",
+            "price": 30.5
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2008_Jeep_Compass_%28MK_MY08%29_Limited_2.4_wagon_%282015-11-11%29_01.jpg/400px-2008_Jeep_Compass_%28MK_MY08%29_Limited_2.4_wagon_%282015-11-11%29_01.jpg",

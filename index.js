@@ -1,12 +1,11 @@
+
 // fetch elements from the server
 function getAllCars(){
     fetch('http://localhost:3000/cars')
     .then(response => response.json())
-    .then(cars => cars.forEach(car => {
-        renderCar(car)
-    }))
+    .then(cars => cars.forEach(car => renderCar(car)))
 }
-getAllCars()
+
 // DOM Render function
 function renderCar(car){
     // build car container
@@ -28,6 +27,12 @@ function renderCar(car){
     `
     // Add the car to the DOM
     document.querySelector('.cars').appendChild(card)
+
+    // buy cay
+    card.querySelector('#btn').addEventListener('click', () => {
+        card.remove()
+        buyCar(car.id)
+    })
 }
 // requst car function
 let requestCar = false
@@ -66,3 +71,41 @@ function search (){
         }
     }
 }
+// function to request a car
+let form = document.querySelector('#request-car')
+form.addEventListener('submit', requestNewCar)
+function requestNewCar(e){
+    e.preventDefault()
+    let carobj= {
+        image:e.target.image.value,
+        title:e.target.name.value,
+        start_production:e.target.year.value,
+        class:e.target.class.value,
+        price:e.target.price.value
+    }
+    renderCar(carobj)
+    handlePostCar(carobj)
+    
+    // reset form
+    form.reset() 
+}
+function handlePostCar(carobj){
+    fetch('http://localhost:3000/cars', {
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(carobj)
+    })
+}
+
+// buy car function 
+function buyCar(id){
+    fetch(`http://localhost:3000/cars/${id}`,{
+        method: 'DELETE',
+        headers:{
+            'Content-Type':'application/json'
+        }
+    })
+}
+getAllCars()

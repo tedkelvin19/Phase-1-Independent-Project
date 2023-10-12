@@ -109,3 +109,28 @@ function buyCar(id){
     })
 }
 getAllCars()
+// comments and rate section
+const commentsList = document.querySelector("#comments-list")
+function renderComments(){
+    // grab form from html
+let commentForm = document.querySelector("#comment-form") 
+// add an event listener to add a new comment
+commentForm.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    let newComment = document.getElementById('comment').value
+    let li = document.createElement('li')
+// create a delete button
+    let btn  = document.createElement("button")
+    btn.textContent = "X"
+    li.textContent = `${newComment}  `
+    li.appendChild(btn)
+    commentsList.appendChild(li)
+ // bonus: add an event to listen for click and call the callback   
+    btn.addEventListener('click',removeComment)
+})
+}
+/// function of removing one comment
+function removeComment(e){
+    e.target.parentNode.remove()
+ }
+ renderComments()

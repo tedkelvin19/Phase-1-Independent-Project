@@ -49,20 +49,60 @@
       "id": 6
     },
     {
-      "image": "https://images.dealer.com/ddc/vehicles/2022/Rolls-Royce/Cullinan/SUV/color/Tempest%20Gray-TEMP-81,89,97-640-en_US.jpg",
-      "title": "Rolls Royce Cullinan",
-      "start_production": "2022",
-      "class": "SUV",
-      "price": "100",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Fiat_Tipo_-_prz%C3%B3d_%28MSP16%29.jpg/400px-Fiat_Tipo_-_prz%C3%B3d_%28MSP16%29.jpg",
+      "title": "Fiat Tipo",
+      "start_production": "2015",
+      "class": "Compact car",
+      "price": "5",
       "id": 7
     },
     {
-      "image": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Reviews/P90486183-highRes_New.jpg&c=0",
-      "title": "BMW 7 Series",
-      "start_production": "2023",
-      "class": "Luxury",
-      "price": "20",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Audi_Q2_Genfer_Automobilsalon_2016.jpg/400px-Audi_Q2_Genfer_Automobilsalon_2016.jpg",
+      "title": "Audi Q2",
+      "start_production": "2016",
+      "class": "Compact SUV",
+      "price": "10",
       "id": 8
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/2017_Pacifica.jpg/400px-2017_Pacifica.jpg",
+      "title": "Chrysler Pacifica (RU)",
+      "start_production": "2016",
+      "class": "Minivan",
+      "price": "7",
+      "id": 9
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Cadillac_XT5.jpg/400px-Cadillac_XT5.jpg",
+      "title": "Cadillac XT5",
+      "start_production": "2016",
+      "class": "Luxury crossover SUV",
+      "price": "9",
+      "id": 10
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ford_Fiesta_MK3_front_20070926.jpg/400px-Ford_Fiesta_MK3_front_20070926.jpg",
+      "title": "Ford Fiesta ",
+      "start_production": "1989",
+      "class": "Supermini",
+      "price": "5",
+      "id": 11
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Hyundai_ASLAN_Front-Side.png/400px-Hyundai_ASLAN_Front-Side.png",
+      "title": "Hyundai ASLAN",
+      "start_production": "2014",
+      "class": "Executive car",
+      "price": "7",
+      "id": 12
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cadillac_CT6_04_2015.jpg/400px-Cadillac_CT6_04_2015.jpg",
+      "title": "Cadillac CT6",
+      "start_production": "2015",
+      "class": "Full-size luxury car",
+      "price": "6",
+      "id": 13
     }
   ]
 }

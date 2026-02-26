@@ -4,12 +4,14 @@
    detail modal, toast notifications, sold counter
    ============================================= */
 
+const API_URL = 'https://phase-1-independent-project-production.up.railway.app'
+
 let allCars = []      // master list fetched from server
 let soldCount = 0     // session sold counter
 
 // ── FETCH ALL CARS ──────────────────────────────
 function getAllCars() {
-  fetch('http://localhost:3000/cars')
+  fetch(`${API_URL}/cars`)
     .then(res => {
       if (!res.ok) throw new Error('Server not reachable')
       return res.json()
@@ -257,7 +259,7 @@ function requestNewCar(e) {
 }
 
 function handlePostCar(carobj) {
-  return fetch('http://localhost:3000/cars', {
+  return fetch(`${API_URL}/cars`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(carobj)
@@ -270,7 +272,7 @@ function handlePostCar(carobj) {
 // ── BUY / DELETE CAR ────────────────────────────
 function buyCar(id) {
   if (!id) return
-  fetch(`http://localhost:3000/cars/${id}`, {
+  fetch(`${API_URL}/cars/${id}`, {
     method: 'DELETE',
     headers: { 'Content-Type': 'application/json' }
   }).catch(() => {/* silent fail if offline */})

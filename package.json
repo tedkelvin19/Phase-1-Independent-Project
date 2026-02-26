@@ -1,7 +1,7 @@
 {
   "name": "autoelite-api",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000"
+    "start": "json-server --watch db.json --port $PORT"
   },
   "dependencies": {
     "json-server": "^0.17.4"

@@ -104,5 +104,31 @@
       "price": "6",
       "id": 13
     }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "James Mwangi",
+      "rating": 5,
+      "message": "Absolutely incredible experience! Found my dream Range Rover in minutes. The team was professional and the process was seamless.",
+      "car": "Range Rover Vogue",
+      "date": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "name": "Aisha Kamau",
+      "rating": 5,
+      "message": "I was skeptical at first but AutoElite delivered beyond my expectations. My Mercedes Benz was delivered in perfect condition. Highly recommend!",
+      "car": "Mercedes Benz Sedan",
+      "date": "2024-02-03"
+    },
+    {
+      "id": 3,
+      "name": "Brian Otieno",
+      "rating": 4,
+      "message": "Great selection of vehicles and very competitive pricing. The search and filter features made it so easy to find exactly what I needed.",
+      "car": "Audi Q2",
+      "date": "2024-02-20"
+    }
   ]
 }

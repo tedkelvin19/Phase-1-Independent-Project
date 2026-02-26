@@ -1,7 +1,8 @@
 {
-  "name": "autoelite-api",
+  "name": "AutoElite Premium Car Dealership",
+  "version": "1.0.0",
   "scripts": {
-    "start": "json-server --watch db.json --port $PORT"
+    "start": "json-server --watch db.json --port 3000 --host 0.0.0.0"
   },
   "dependencies": {
     "json-server": "^0.17.4"

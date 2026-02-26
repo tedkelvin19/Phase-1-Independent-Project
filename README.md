@@ -1,60 +1,146 @@
-# Phase-1-Independent-Project
-# Auto Car Dealer
-This is a simple car dealer application that offers a range of different vehicles.
-The objectives i wished yo achieve in this project were;
-1. Dispaly Available cars on the dom
-2. Request a car that is not available
-3. Filter cars by name
-4. Buy a car
-5. Add comments
-## Dispaly Available cars on the dom
-This was achieved by fetching the car details from the cars.json, then i created a card to contain
-car details and i appended the card to the Dom
-## Request a car that is not available
-This was achieved by creating a form containing all car details.Then i created a function to grab all the values entered by the user. Using this values i created a carObj. After the carObj was created i 
-created a POST request to the cars.json inorder to add the carObj to the cars.json
-## Filter cars by name
-This was achieved by creating a form with one input field that is the search bar. Then i created a for loop that looped through the database and find the car names available. Then iside the For Loop i created a IF statement that checked if the user input matched the car name in the database.
-## Buy a Car
-The buy car button was created so that when the user clicks on the button it deletes the carObj form the databace and DOM.This was achieved by a creating a fetch and assigning a anonymous function with the Method Delete.
- ## Add comments
- This was achieved by creating a form and unordered list. Then inside the js file i created a  function to grab the form and its values. Then i created a li element and assigned it the value from the form. Then i  appended the li to the ul.
- # Installation
- Inorder to use this application, follow the following instuction;
- 1. Navigate to my github acccout [(https://github.com/tedkelvin19)].
- 2. Click on the repositories and select the repo you want. 
- 3. After you open the you will see a tab written code with a dropdown arrow
- 4. Select the dropdown arrow and copy the ssh Link or download the zip file.
- 5. if you copied the ssh link open the terminal and type git clone + ssh link .
- 6. if you downloaded the zip file , locate the zip file an extract it.
- 7. Then open the parent folder and right click inside that folder and select open with termianl.
- 8. In the terminal run the following command to start the json server.'json-server --watch cars.json' 
- 9. All done you can open the index.html and enjoy the application.
- # Languages used 
- 1. HTML
- 2. CSS
- 3. JavaScript
- 4. JSON
+# AutoElite — Premium Car Dealer 🚗
 
- # License
- MIT License
+A premium car dealership web application that offers a curated collection of vehicles. Built with vanilla HTML, CSS, and JavaScript, backed by a live REST API deployed on Railway.
 
-Copyright (c) 2023 tedkelvin19
+🔗 **Live Demo:** [autoelite.vercel.app](https://vercel.app)
+🔗 **API:** [https://phase-1-independent-project-x3nq.onrender.com/cars](https://phase-1-independent-project-x3nq.onrender.com/cars)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## Features
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### 1. Display Available Cars
+All cars are fetched from a live REST API on page load and rendered as polished cards on the DOM. Each card shows the car image, name, year, class, and price. Loading skeleton cards are shown while data is being fetched.
+
+### 2. Request / Add a New Car
+A modal form allows users to submit a new vehicle listing by entering the image URL, name, year, class, and price. The new car is sent to the API via a POST request and immediately rendered on the DOM without a page refresh.
+
+### 3. Search & Filter Cars
+- **Search bar** — filters cars in real time by name, class, or year as the user types, with a live results counter.
+- **Filter buttons** — quickly filter by category: All, SUV, Sedan, Luxury, or Compact.
+- **Sort dropdown** — sort the inventory by price (low to high / high to low) or year (newest / oldest).
+
+### 4. Buy a Car
+Each car card has a **Buy Now** button. Clicking it removes the car from the DOM with a smooth animation and sends a DELETE request to the API to remove it from the database. A **Details** button opens a full modal with a larger view before purchasing.
+
+### 5. Comments Section
+Users can post comments or questions at the bottom of the page. Each comment displays with an avatar, timestamp, and a delete button to remove it.
+
+### 6. Additional UX Improvements
+- Toast notifications for every action (buy, add, error)
+- Live stock counter and sold counter in the navbar
+- Graceful offline fallback — cars render locally if the API is unreachable
+- Fully responsive on mobile, tablet, and desktop
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | HTML, CSS, JavaScript |
+| Backend / API | json-server |
+| Backend Hosting | Render |
+| Frontend Hosting | Vercel |
+
+---
+
+## Project Structure
+
+```
+📁 autoelite/
+  ├── index.html      # Main HTML structure
+  ├── index.css       # All styles
+  ├── index.js        # All JavaScript logic
+  ├── db.json         # Database file for json-server
+  └── package.json    # Node config for Railway deployment
+```
+
+---
+
+## Running Locally
+
+Follow these steps to run the project on your machine:
+
+**1. Clone the repository**
+```bash
+git clone git@github.com:tedkelvin19/Phase-1-Independent-Project.git
+cd Phase-1-Independent-Project
+```
+
+**2. Install json-server**
+```bash
+npm install -g json-server
+```
+
+**3. Start the API server**
+```bash
+json-server --watch db.json
+```
+The API will run at `http://localhost:3000/cars`
+
+**4. Update the API URL in `index.js`**
+
+Change line 7 from the Railway URL back to localhost:
+```javascript
+const API_URL = 'http://localhost:3000'
+```
+
+**5. Open the app**
+
+Open `index.html` with the Live Server extension in VS Code, or run:
+```bash
+npx serve .
+```
+Then visit `http://localhost:8080`
+
+---
+
+## Deployment
+
+### Backend — Render
+The json-server API is deployed on Render. The `package.json` start script uses `$PORT` and `--host 0.0.0.0` so Render can assign the port dynamically and accept external connections:
+
+```json
+{
+  "scripts": {
+    "start": "json-server --watch db.json --host 0.0.0.0 --port $PORT"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
+```
+
+> ⚠️ **Note:** Render's free tier spins down after 15 minutes of inactivity. The first request after idle may take ~30 seconds to wake up.
+
+### Frontend — Vercel
+The frontend is deployed on Vercel as a static site. Push to GitHub and Vercel auto-deploys on every commit.
+
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/cars` | Fetch all cars |
+| POST | `/cars` | Add a new car |
+| DELETE | `/cars/:id` | Remove a car by ID |
+
+---
+
+## Author
+
+**Ted Kelvin** — [@tedkelvin19](https://github.com/tedkelvin19)
+
+---
+
+## License
+
+MIT License — Copyright (c) 2023 tedkelvin19
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

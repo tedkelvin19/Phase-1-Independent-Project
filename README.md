@@ -2,7 +2,7 @@
 
 A premium car dealership web application that offers a curated collection of vehicles. Built with vanilla HTML, CSS, and JavaScript, backed by a live REST API deployed on Railway.
 
-🔗 **Live Demo:** [autoelite.vercel.app](https://vercel.app)
+🔗 **Live Demo:** [autoelite.vercel.app](https://phase-1-independent-project-rho.vercel.app/)
 🔗 **API:** [https://phase-1-independent-project-x3nq.onrender.com/cars](https://phase-1-independent-project-x3nq.onrender.com/cars)
 
 ---

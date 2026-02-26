@@ -338,6 +338,117 @@ function showToast(message, type = 'success') {
   setTimeout(() => toast.classList.remove('show'), 3500)
 }
 
+// ── TESTIMONIALS ─────────────────────────────────
+function getAllTestimonials() {
+  fetch(`${API_URL}/testimonials`)
+    .then(res => {
+      if (!res.ok) throw new Error('Could not fetch testimonials')
+      return res.json()
+    })
+    .then(testimonials => {
+      document.querySelectorAll('#testimonials-grid .skeleton-card').forEach(s => s.remove())
+      testimonials.forEach(t => renderTestimonial(t))
+    })
+    .catch(() => {
+      document.querySelectorAll('#testimonials-grid .skeleton-card').forEach(s => s.remove())
+    })
+}
+
+function renderTestimonial(t) {
+  const grid = document.getElementById('testimonials-grid')
+  const stars = '★'.repeat(t.rating) + '☆'.repeat(5 - t.rating)
+  const date  = new Date(t.date).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })
+  const initials = t.name.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2)
+
+  const card = document.createElement('div')
+  card.className = 'testimonial-card'
+  card.dataset.id = t.id
+  card.innerHTML = `
+    <div class="t-header">
+      <div class="t-avatar">${initials}</div>
+      <div class="t-meta">
+        <span class="t-name">${t.name}</span>
+        <span class="t-car"><i class="fas fa-car"></i> ${t.car}</span>
+      </div>
+      <div class="t-stars">${stars}</div>
+    </div>
+    <p class="t-message">"${t.message}"</p>
+    <span class="t-date">${date}</span>
+  `
+  grid.appendChild(card)
+}
+
+function postTestimonial(obj) {
+  return fetch(`${API_URL}/testimonials`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(obj)
+  }).then(res => {
+    if (!res.ok) throw new Error('POST failed')
+    return res.json()
+  })
+}
+
+// Star picker interactivity
+document.addEventListener('DOMContentLoaded', () => {
+  const stars  = document.querySelectorAll('.star')
+  const ratingInput = document.getElementById('t-rating')
+
+  stars.forEach(star => {
+    star.addEventListener('mouseover', () => highlightStars(star.dataset.value))
+    star.addEventListener('mouseout',  () => highlightStars(ratingInput.value))
+    star.addEventListener('click', () => {
+      ratingInput.value = star.dataset.value
+      highlightStars(star.dataset.value)
+    })
+  })
+
+  function highlightStars(val) {
+    stars.forEach(s => {
+      s.classList.toggle('active', Number(s.dataset.value) <= Number(val))
+    })
+  }
+
+  // Testimonial form submit
+  document.getElementById('testimonial-form').addEventListener('submit', e => {
+    e.preventDefault()
+    const rating = Number(document.getElementById('t-rating').value)
+    if (rating === 0) { showToast('⭐ Please select a star rating.', 'warning'); return }
+
+    const btn = document.getElementById('testimonial-submit-btn')
+    btn.disabled = true
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...'
+
+    const obj = {
+      name:    document.getElementById('t-name').value,
+      car:     document.getElementById('t-car').value,
+      rating,
+      message: document.getElementById('t-message').value,
+      date:    new Date().toISOString().split('T')[0]
+    }
+
+    postTestimonial(obj)
+      .then(saved => {
+        renderTestimonial(saved)
+        document.getElementById('testimonial-form').reset()
+        document.querySelectorAll('.star').forEach(s => s.classList.remove('active'))
+        document.getElementById('t-rating').value = 0
+        showToast('🙏 Thank you for your testimonial!', 'success')
+      })
+      .catch(() => {
+        // Render locally if API is down
+        renderTestimonial({ ...obj, id: Date.now() })
+        document.getElementById('testimonial-form').reset()
+        showToast('⚠️ Saved locally (server offline).', 'warning')
+      })
+      .finally(() => {
+        btn.disabled = false
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Testimonial'
+      })
+  })
+})
+
 // ── INIT ─────────────────────────────────────────
 getAllCars()
+getAllTestimonials()
 renderComments()

@@ -144,6 +144,59 @@
     </div>
   </div>
 
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="testimonials-inner">
+      <div class="section-header">
+        <p class="section-eyebrow">What Clients Say</p>
+        <h2 class="section-title-large">Customer <em>Testimonials</em></h2>
+        <p class="section-sub">Real experiences from real AutoElite customers.</p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="testimonials-grid" id="testimonials-grid">
+        <div class="skeleton-card" style="height:200px"></div>
+        <div class="skeleton-card" style="height:200px"></div>
+        <div class="skeleton-card" style="height:200px"></div>
+      </div>
+
+      <!-- Submit Testimonial Form -->
+      <div class="testimonial-form-wrap">
+        <h3 class="form-heading">Share Your Experience</h3>
+        <form id="testimonial-form" class="testimonial-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="t-name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="form-group">
+              <label>Car You Purchased</label>
+              <input type="text" id="t-car" class="form-input" placeholder="e.g. Range Rover Vogue" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Rating</label>
+            <div class="star-picker" id="star-picker">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <input type="hidden" id="t-rating" value="0">
+          </div>
+          <div class="form-group">
+            <label>Your Review</label>
+            <textarea id="t-message" class="form-input form-textarea" placeholder="Tell us about your experience..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="testimonial-submit-btn">
+            <i class="fas fa-paper-plane"></i> Submit Testimonial
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- Comments Section -->
   <section class="comments-section">
     <div class="comments-inner">

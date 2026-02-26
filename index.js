@@ -4,7 +4,7 @@
    detail modal, toast notifications, sold counter
    ============================================= */
 
-const API_URL = 'https://phase-1-independent-project-production.up.railway.app'
+const API_URL = 'https://phase-1-independent-project-x3nq.onrender.com'
 
 let allCars = []      // master list fetched from server
 let soldCount = 0     // session sold counter

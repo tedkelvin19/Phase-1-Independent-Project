@@ -3,61 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Car Dealer</title>
-    <!-- i will link my page to a online style library -->
+    <title>AutoElite — Premium Car Dealer</title>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- i will also use a google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="index.css"> <!-- Link to my local stylesheet -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img src="logo.jpeg"></a>
-        <h1>Auto Car Dealer</h1>
-    </nav>
-    <br>
-    <br>
-    <div class="container">
-        <form class="request-car" id="request-car">
-          <h3>Request Car!</h3>
-          <input type="text" name="image" value="" placeholder="Enter car image URL..." class="input-text">
-          <br>
-          <input type="text" name="name" value="" placeholder="Enter car name..." class="input-text">
-          <br>
-          <input type="number" name="year" value="" placeholder="Enter car year..." class="input-text">
-          <br>
-          <input type="text" name="class" value="" placeholder="Enter car class..." class="input-text">
-          <br>
-          <input type="number" name="price" value="" placeholder="Enter car price..." class="input-text">
-          <br>
-          <input type="submit" name="submit" value="Request Car" class="submit">
-        </form>
-      </div>
-      <p style="text-align:center; margin-top: 20px; color: black;">
-        A car you want is not Available? <button id="new-car-btn">Request Car</button>
-      </p>
-      <div class="car-container">
-        <h2>Available cars</h2>
-        <form >
-          <i class="fas fa-search"></i>
-          <input type="text" name="" id="search-car" placeholder="Search Cars" onkeyup="search()">
-        </form>
-      <div class="cars" id="cars-list"></div>
-      </div>
-    
-      <!-- comments section -->
 
-      <ul id="comments-list" class="comments">
-          
-      </ul>
-      <form id="comment-form" class="comment-form">
-        <input class="comment-input"ntype="text" name="comment" id="comment" placeholder="Add a comment..." />
-        <button class="comment-button" type="submit">Post</button>
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">⬡</span>
+      <div>
+        <span class="brand-name">AutoElite</span>
+        <span class="brand-tagline">Premium Dealership</span>
+      </div>
+    </div>
+    <div class="nav-stats">
+      <div class="stat-item">
+        <span class="stat-number" id="total-cars">0</span>
+        <span class="stat-label">In Stock</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" id="total-sold">0</span>
+        <span class="stat-label">Sold Today</span>
+      </div>
+    </div>
+    <button class="nav-cta" id="new-car-btn">
+      <i class="fas fa-plus"></i> List a Car
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to AutoElite</p>
+      <h1 class="hero-title">Drive Your<br><em>Dream Car</em></h1>
+      <p class="hero-subtitle">Curated collection of the world's finest automobiles, delivered to your door.</p>
+      <div class="search-wrapper">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="search-car" placeholder="Search by model, class, or brand..." onkeyup="search()">
+        <span class="search-count" id="search-count"></span>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="deco-circle c1"></div>
+      <div class="deco-circle c2"></div>
+      <div class="deco-circle c3"></div>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All Cars</button>
+    <button class="filter-btn" data-filter="suv">SUV</button>
+    <button class="filter-btn" data-filter="sedan">Sedan</button>
+    <button class="filter-btn" data-filter="luxury">Luxury</button>
+    <button class="filter-btn" data-filter="compact">Compact</button>
+    <div class="sort-wrapper">
+      <label>Sort by:</label>
+      <select id="sort-select" onchange="sortCars()">
+        <option value="default">Default</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="year-desc">Newest First</option>
+        <option value="year-asc">Oldest First</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Cars Grid -->
+  <main class="main-content">
+    <div class="cars" id="cars-list">
+      <!-- Loading skeleton -->
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+    </div>
+    <div class="empty-state" id="empty-state" style="display:none;">
+      <div class="empty-icon">🚗</div>
+      <h3>No cars found</h3>
+      <p>Try a different search term or browse all vehicles.</p>
+    </div>
+  </main>
+
+  <!-- Request Car Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="request-modal">
+      <div class="modal-header">
+        <h2>List a New Car</h2>
+        <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      </div>
+      <form class="request-form" id="request-car">
+        <div class="form-group">
+          <label>Car Image URL</label>
+          <input type="text" name="image" placeholder="https://..." class="form-input" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Car Name / Model</label>
+            <input type="text" name="name" placeholder="e.g. Range Rover Vogue" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label>Year</label>
+            <input type="number" name="year" placeholder="2024" class="form-input" min="1900" max="2030" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Class / Category</label>
+            <input type="text" name="class" placeholder="e.g. Luxury SUV" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label>Price (in Millions $)</label>
+            <input type="number" name="price" placeholder="e.g. 2.5" class="form-input" min="0" step="0.1" required>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-car"></i> Add to Inventory
+        </button>
       </form>
-    <script src="index.js"></script> <!-- link to the javascript file -->
+    </div>
+  </div>
+
+  <!-- Car Detail Modal -->
+  <div class="modal-overlay" id="detail-overlay">
+    <div class="modal detail-modal" id="detail-modal">
+      <button class="modal-close" id="detail-close"><i class="fas fa-times"></i></button>
+      <div id="detail-content"></div>
+    </div>
+  </div>
+
+  <!-- Comments Section -->
+  <section class="comments-section">
+    <div class="comments-inner">
+      <h2 class="section-title">Customer Voices</h2>
+      <form id="comment-form" class="comment-form">
+        <input class="comment-input" type="text" name="comment" id="comment" placeholder="Share your experience or ask a question..." />
+        <button class="comment-button" type="submit"><i class="fas fa-paper-plane"></i> Post</button>
+      </form>
+      <ul id="comments-list" class="comments-list"></ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="brand-name">AutoElite</span>
+      <p>© 2024 AutoElite Premium Dealership. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
